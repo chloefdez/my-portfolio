@@ -4,12 +4,11 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#faf8f5]">
       {/* Navigation */}
-      <nav className="flex justify-between items-center px-12 py-8 sticky top-0 bg-[#faf8f5] z-50">
-        {" "}
+      <nav className="flex justify-between items-center px-6 py-6 sticky top-0 bg-[#faf8f5] z-50">
         <span className="text-black font-light tracking-[0.3em] text-sm uppercase">
           Chloe Gonçalves
         </span>
-        <div className="flex gap-10">
+        <div className="hidden md:flex gap-10 items-center">
           <a
             href="#about"
             className="text-sm tracking-widest text-gray-500 hover:text-black transition-colors uppercase font-light"
@@ -28,6 +27,22 @@ export default function Home() {
           >
             Contact
           </a>
+          <a
+            href="https://github.com/chloefdez"
+            target="_blank"
+            className="text-gray-500 hover:text-black transition-colors"
+          >
+            <FaGithub size={18} />
+          </a>
+          <a
+            href="https://linkedin.com/in/chloefdez"
+            target="_blank"
+            className="text-gray-500 hover:text-black transition-colors"
+          >
+            <FaLinkedin size={18} />
+          </a>
+        </div>
+        <div className="flex md:hidden gap-6 items-center">
           <a
             href="https://github.com/chloefdez"
             target="_blank"
@@ -223,7 +238,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="text-center py-8 text-xs tracking-widest text-gray-300 uppercase">
+      <footer className="text-center py-16 pb-20 text-xs tracking-widest text-gray-300 uppercase">
         © 2026 Chloe Gonçalves
       </footer>
     </main>
