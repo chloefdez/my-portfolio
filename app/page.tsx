@@ -128,21 +128,20 @@ export default function Home() {
 
           <div className="bg-[#f2ede8] p-10 hover:bg-[#ecddd6] transition-colors">
             <p className="text-xs tracking-widest text-gray-400 uppercase mb-3">
-              HTML · CSS · JavaScript
+              Next.js · Firebase · Tailwind
             </p>
             <h3
               className="text-black font-light text-xl mb-3"
               style={{ fontFamily: "Georgia, serif" }}
             >
-              NFT Marketplace
+              LuxeLog
             </h3>
             <p className="text-gray-400 text-sm font-light leading-relaxed">
-              A responsive NFT marketplace clone with smooth animations, built
-              with HTML, CSS, and JavaScript. Developed using Git branching and
-              pull requests.
+              A luxury item authentication tracker with real-time Firebase
+              database, full CRUD functionality, and search and filter features.
             </p>
             <a
-              href="https://chloe-internship.vercel.app/"
+              href="https://luxe-log.vercel.app"
               target="_blank"
               className="inline-block mt-6 text-xs tracking-widest uppercase text-black border-b border-black pb-0.5 hover:text-[#c9a99a] hover:border-[#c9a99a] transition-colors"
             >
