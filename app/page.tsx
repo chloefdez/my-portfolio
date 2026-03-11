@@ -28,6 +28,14 @@ export default function Home() {
             Contact
           </a>
           <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm tracking-widest text-gray-500 hover:text-black transition-colors uppercase font-light"
+          >
+            Resume
+          </a>
+          <a
             href="https://github.com/chloefdez"
             target="_blank"
             className="text-gray-500 hover:text-black transition-colors"
@@ -95,6 +103,47 @@ export default function Home() {
           Fashionphile, I discovered a love for building the web experiences I'd
           always admired.
         </p>
+      </section>
+
+      {/* Skills */}
+      <section className="max-w-4xl mx-auto px-6 py-12 text-center">
+        <p className="text-xs tracking-[0.4em] text-[#c9a99a] uppercase mb-12">
+          Technologies
+        </p>
+        <div className="flex flex-col items-center gap-3">
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              "React",
+              "Next.js",
+              "JavaScript",
+              "TypeScript",
+              "HTML & CSS",
+              "Tailwind CSS",
+            ].map((skill) => (
+              <span
+                key={skill}
+                className="px-5 py-2 border border-[#e8e0d8] text-xs tracking-widest uppercase text-gray-400 hover:border-black hover:text-black transition-colors"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              "Firebase & Firestore",
+              "REST APIs",
+              "Git & GitHub",
+              "Vercel",
+            ].map((skill) => (
+              <span
+                key={skill}
+                className="px-5 py-2 border border-[#e8e0d8] text-xs tracking-widest uppercase text-gray-400 hover:border-black hover:text-black transition-colors"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* Projects */}
@@ -212,12 +261,22 @@ export default function Home() {
         <p className="text-sm text-gray-400 font-light tracking-widest mb-10">
           chloefdez@gmail.com
         </p>
-        <a
-          href="mailto:chloefdez@gmail.com"
-          className="px-10 py-3 bg-black text-white text-sm tracking-widest uppercase hover:bg-[#c9a99a] transition-colors font-light"
-        >
-          Say Hello
-        </a>
+        <div className="flex flex-col items-center gap-4">
+          <a
+            href="mailto:chloefdez@gmail.com"
+            className="px-10 py-3 bg-black text-white text-sm tracking-widest uppercase hover:bg-[#c9a99a] transition-colors font-light"
+          >
+            Say Hello
+          </a>
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm tracking-widest text-gray-500 hover:text-black transition-colors uppercase font-light underline underline-offset-4"
+          >
+            Resume
+          </a>
+        </div>
         <div className="flex justify-center gap-6 mt-10">
           <a
             href="https://github.com/chloefdez"
